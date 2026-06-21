@@ -281,16 +281,16 @@
         <div class="container">
             <div class="navbar-brand">
                 <div class="navbar-item logo">
-                    <a href="index.php" class="fs24 fw700" title="">KD<span>TIK</span></a>
+                    <a href="index.html" class="fs24 fw700" title="">KD<span>TIK</span></a>
                 </div>
                 <div role="button" class="navbar-burger" aria-label="Menu" data-target="kdtik-menu"><span></span><span></span><span></span></div>
             </div>
             <div id="kdtik-menu" class="navbar-menu transition-all">
                 <div class="navbar-start"></div>
                 <div class="navbar-end">
-                    <a href="index.php" class="navbar-item active">TikTok</a>
-                    <a href="facebook.php" class="navbar-item">Facebook</a>
-                    <a href="youtube.php" class="navbar-item">YouTube</a>
+                    <a href="index.html" class="navbar-item active">TikTok</a>
+                    <a href="facebook.html" class="navbar-item">Facebook</a>
+                    <a href="youtube.html" class="navbar-item">YouTube</a>
                 </div>
             </div>
         </div>
@@ -437,8 +437,8 @@
                         <ul class="list-unstyled">
                             <li><a href="#">Download photo TikTok Notes</a></li>
                             <li><a href="#" rel="nofollow">Download video Douyin</a></li>
-                            <li><a href="facebook.php" rel="nofollow">Download video Facebook</a></li>
-                            <li><a href="youtube.php" rel="nofollow">Download video YouTube</a></li>
+                            <li><a href="facebook.html" rel="nofollow">Download video Facebook</a></li>
+                            <li><a href="youtube.html" rel="nofollow">Download video YouTube</a></li>
                             <li><a href="#" rel="nofollow">Download Tiktok Slide</a></li>
                             <li><a href="#" rel="nofollow">Download Tiktok Story</a></li>
                         </ul>
@@ -480,6 +480,7 @@
                     const musicUrl = data.data.music || "";
                     const hdVideoUrl = data.data.wmplay || data.data.play;
 
+                    // Giữ nút "Tải xuống khác" về / (trang chủ)
                     result.innerHTML = `
                         <div class="download-result">
                             <div class="download-header">
@@ -506,7 +507,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="more-video" href="/">Tải xuống video khác</a>
+                            <a class="more-video" href="index.html">Tải xuống video khác</a>
                             <div class="download-footer">
                                 <p>💡 Cách tải video TikTok với TikVid</p>
                             </div>
